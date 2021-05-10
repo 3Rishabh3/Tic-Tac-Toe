@@ -62,6 +62,19 @@ const App = () => {
       itemArray[4] === itemArray[6]
     ) {
       setWinMessage(`${itemArray[2]} won`);
+    } else if (
+      itemArray[0] !== " " &&
+      itemArray[1] !== " " &&
+      itemArray[2] !== " " &&
+      itemArray[3] !== " " &&
+      itemArray[4] !== " " &&
+      itemArray[5] !== " " &&
+      itemArray[6] !== " " &&
+      itemArray[7] !== " " &&
+      itemArray[8] !== " " &&
+      winMessage === ""
+    ) {
+      setWinMessage(`Match Draw`);
     }
   };
 
@@ -72,20 +85,6 @@ const App = () => {
         setIsCross(!isCross);
       }
       winningStatus();
-    }
-    if (
-      itemArray[0] !== " " &&
-      itemArray[1] !== " " &&
-      itemArray[2] !== " " &&
-      itemArray[3] !== " " &&
-      itemArray[4] !== " " &&
-      itemArray[5] !== " " &&
-      itemArray[6] !== " " &&
-      itemArray[7] !== " " &&
-      itemArray[8] !== " " &&
-      !winMessage
-    ) {
-      setWinMessage(`Match Draw`);
     }
   };
 
