@@ -96,7 +96,7 @@ const App = () => {
           <button onClick={() => reset()}>Play Again</button>
         </div>
       ) : (
-        <h1>{!isCross ? "Circle" : "Cross"} turns</h1>
+        <h1>{!isCross ? "Circle's" : "Cross"} turn</h1>
       )}
       <div className="main">
         {itemArray.map((item, index) => (
@@ -110,7 +110,7 @@ const App = () => {
           </div>
         ))}
       </div>
-      <p style={{ color: "darkolivegreen" }}>~Made By Rishabh Gupta</p>
+      <p style={{ color: "darkolivegreen" }}>~Created By Rishabh Gupta</p>
     </div>
   );
 };
